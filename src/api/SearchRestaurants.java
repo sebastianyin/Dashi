@@ -46,7 +46,6 @@ public class SearchRestaurants extends HttpServlet {
 			String userId = request.getParameter("user_id");
 			double lat = Double.parseDouble(request.getParameter("lat"));
 			double lon = Double.parseDouble(request.getParameter("lon"));
-			// return some fake restaurants
 			array = connection.searchRestaurants(userId, lat, lon);
 		}
 		RpcParser.writeOutput(response, array);
