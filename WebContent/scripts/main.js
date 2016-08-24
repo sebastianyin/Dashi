@@ -476,7 +476,7 @@
 		var stars = $('div', {
 			className : 'stars'
 		});
-		for (var i = 0; i < restaurant.stars; i++) {
+		for (var i = 0; i < Math.floor(restaurant.stars); i++) {
 			var star = $('i', {
 				className : 'fa fa-star'
 			});
